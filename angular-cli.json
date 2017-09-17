@@ -30,7 +30,7 @@
   ],
   "e2e": {
     "protractor": {
-      "config": "./protractor.conf.js"
+      "config": "config/protractor.conf.js"
     }
   },
   "lint": [
@@ -39,8 +39,8 @@
       "project": "src/tsconfig.json"
     },
     {
-      "files": "e2e/**/*.ts",
-      "project": "e2e/tsconfig.json"
+      "files": "e2e/**/*.js",
+      "project": "tsconfig.json"
     }
   ],
   "test": {

@@ -17,6 +17,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running BDD tests
+
+For runnig these kind of test we're going to need the following steps:
+* Install selenium/standalone-chrome image for Docker in our local environment.
+* Run `docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome` for launching a Docker container with selenium for Google Chrome.
+* Run `npm run e2e` for BDD tests via [Protractor](http://www.protractortest.org/).
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
