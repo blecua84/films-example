@@ -3,7 +3,9 @@ const expect = chai.expect;
 
 var {defineSupportCode} = require('cucumber');
 
-defineSupportCode(({ Given, When, Then }) => {
+defineSupportCode(({ Given, When, Then, setDefaultTimeout }) => {
+    setDefaultTimeout(60 * 1000);
+
     Given('I go to the website', function (callback) {
         browser.get('http://localhost:4200/').then(callback);
     });
