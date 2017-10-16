@@ -1,2 +1,4 @@
 ### NPM DEPENDENCIES ###
 node_modules/
+
+protractor-report/index.html
