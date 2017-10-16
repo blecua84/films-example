@@ -1,0 +1,49 @@
+[
+  {
+    "description": "    I should be able to go to the website\n    and check its title.",
+    "keyword": "Feature",
+    "name": "Title check",
+    "line": 2,
+    "id": "title-check",
+    "tags": [],
+    "uri": "e2e/welcome.feature",
+    "elements": [
+      {
+        "id": "title-check;get-the-title-of-the-website",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Get the title of the website",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I go to the website",
+            "match": {
+              "location": "e2e/steps/welcome.steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 937
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I expect the title of the page \"Films Register\"",
+            "match": {
+              "location": "e2e/steps/welcome.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
